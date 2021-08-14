@@ -64,6 +64,11 @@ hr { border-color: #e5e7eb; }
 	transition-delay: .5s;
 }
 
+.title { 
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
 .row { margin-bottom: 8px; }
 
 .form__input {
@@ -71,6 +76,19 @@ hr { border-color: #e5e7eb; }
   background:rgba(0, 0, 0, .1);
   padding:10px 15px;
   color: #e5e7eb;
+}
+
+/*not visibles but can be read by screen readers */
+.form__label {
+  position: absolute;
+  height: 1px; 
+  width: 1px; 
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .row-remember-me {
@@ -92,7 +110,8 @@ hr { border-color: #e5e7eb; }
   padding-bottom: 10px;
   border-radius: 10px;
   font-size: 1.2rem;
-  background: #c34c1d;
+  /* background: #c34c1d; */
+  background: #566c41;
   color: #f3f4f6;
   margin-bottom: 12px;
   cursor: pointer;
@@ -116,7 +135,7 @@ hr { border-color: #e5e7eb; }
     height: 70vh;
   }
 
-  .form-card { padding:90px 70px 50px 70px; }
+  .form-card { padding:50px 70px 50px 70px; }
 }
 
 @media only screen and (min-width: 1024px) {

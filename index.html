@@ -14,10 +14,15 @@
   <main class="container">
     <div class="form-container">
       <form class="form-card card-sign-in">
+        <div class="title">
+          <h3>Welcome back</h3>
+        </div>
         <div class="row">
+          <label class="form__label" for="user">Username</label>
           <input id="user" type="text" class="form__input" placeholder="Username" autocomplete="username" autofocus required>
         </div>
         <div class="row">
+          <label class="form__label" for="password">Password</label>
           <input id="password" type="password" class="form__input" placeholder="Password" required>
         </div>
         <div class="row-remember-me">
@@ -32,14 +37,20 @@
         </div>  
       </form>
       <form class="form-card card-sign-up invisible ">
-        <div class="row">
-          <input id="user" type="text" class="form__input" placeholder="Username" autocomplete="username" enterkeyhint="next" required>
+        <div class="title">
+          <h3>Welcome</h3>
         </div>
         <div class="row">
+          <label class="form__label" for="user-create">Username</label>
+          <input id="user-create" type="text" class="form__input" placeholder="Username" autocomplete="username" enterkeyhint="next" required>
+        </div>
+        <div class="row">
+          <label class="form__label" for="email">Email</label>
           <input id="email" type="email" class="form__input" placeholder="Email" autocomplete="email" required>
         </div>
         <div class="row">
-          <input id="password" type="password" class="form__input" placeholder="Password" required>
+          <label class="form__label" for="password-create">Password</label>
+          <input id="password-create" type="password" class="form__input" placeholder="Password" required>
         </div>
         <button type="submit" class="button">Sign up</button>
         <hr>
