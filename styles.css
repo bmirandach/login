@@ -1,0 +1,124 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  border:none;
+  width: 100%;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid #F05252;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e27f40;
+  cursor: pointer;
+}
+
+hr { border-color: #e5e7eb; }
+
+.container {
+  min-height: 100vh;
+  background-image: url('images/HillsandMountains-sunset.png');
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.1rem;
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+}
+
+.form-card {
+  background-color: rgba(56, 39, 88, .7);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  padding: 90px 10vw 50px 10vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all .5s ease-in-out;
+	transition-delay: .5s;
+}
+
+.row { margin-bottom: 8px; }
+
+.form__input {
+  font-size: 1.2rem;
+  background:rgba(0, 0, 0, .1);
+  padding:10px 15px;
+  color: #e5e7eb;
+}
+
+.row-remember-me {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.row-remember-me .check:checked + label { color: #F9FAFB; }
+
+.check{
+  width: fit-content;
+  margin: auto .5rem auto 0;
+}
+
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background: #c34c1d;
+  color: #f3f4f6;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.button:hover { background: #e27f40; }
+
+.row-pwd { margin-bottom: 12px; }
+
+.row-sign { margin: 25px 0 8px 0 ; }
+
+.invisible {
+  transform: translate(-50%, -50%) rotateY(-90deg);
+	opacity: 0;
+	transition-delay: 0s;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container {
+    width: 60vw;
+    height: 70vh;
+  }
+
+  .form-card { padding:90px 70px 50px 70px; }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-container { width: 35vw; }
+}
