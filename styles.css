@@ -10,7 +10,7 @@ input, button {
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
-  border: 1px solid #F05252;
+  border: 1px solid #aaaaaa;
 }
 
 a {
